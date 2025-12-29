@@ -16,7 +16,7 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <a href="#hero" class="logo">Marko</a>
+    <a href="#hero" class="logo">WEB STUDIO</a>
 
     <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
       <a href="#hero">Home</a>
@@ -123,64 +123,130 @@
             čak i dok spavaš.
           </p>
           <p>
-            Ako još uvek nemaš sajt, verovatno gubiš klijente svakog dana. Ljudi danas prvo traže usluge na Googleu ili
-            Instagramu —
-            a ako te nema, biraju nekog drugog. Ja ti pravim <strong>sajt koji radi za tebe</strong>: privlači klijente,
-            objašnjava tvoju uslugu i povećava prodaju —
-            čak i dok spavaš.
+            Bez sajta, veliki deo tvoje vrednosti ostaje nevidljiv.
+            Sajt koji jasno prikazuje tvoj pristup, usluge i način rada ne samo da privlači prave klijente – već i štedi
+            tvoje vreme,
+            jer ljudi dolaze već upoznati s onim što nudiš.
+            To znači manje objašnjavanja, više smislenih razgovora – i više prostora za ono što stvarno voliš da radiš.
           </p>
           <p>
             Ne prodajem "dizajn". Prodajem <strong>rezultate</strong>.
           </p>
         </div>
         <div class="about-image">
-          <img src="CV.webp" alt="Marko - Web Developer" />
+          <img src="images/CV.webp" alt="Marko - Web Developer" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Proces rada -->
+  <section class="workflow" id="workflow">
+    <div class="container">
+      <h2>Naš proces rada</h2>
+      <ol class="steps">
+        <li>
+          <h3>Konsultacija</h3>
+          <p>Razgovaramo o tvojim ciljevima, ciljnoj publici i funkcionalnostima koje su ti potrebne.</p>
+        </li>
+        <li>
+          <h3>Dizajn</h3>
+          <p>Kreiram moderan, mobilno-prilagođen mockup koji odražava tvoj brend.</p>
+        </li>
+        <li>
+          <h3>Razvoj</h3>
+          <p>Prevodim dizajn u brz, pristupačan i SEO-prijateljski sajt bez Bootstrapa.</p>
+        </li>
+        <li>
+          <h3>Testiranje</h3>
+          <p>Proveravam performanse, kompatibilnost i ispravnost na svim uređajima.</p>
+        </li>
+        <li>
+          <h3>Lansiranje</h3>
+          <p>Pokrećem sajt i obezbeđujem osnovnu SEO optimizaciju i Google integracije.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2>Često postavljana pitanja</h2>
+      <div class="faq-items">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Koliko traje izrada sajta?
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Većina sajtova je spremna za 7–14 dana od trenutka kada se potvrdi dizajn i sadržaj.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Da li uključuješ hosting i domen?
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Hosting i domen nisu uključeni u osnovnu cenu, ali mogu ti pomoći da ih podesiš ako već imaš, ili
+              preporučiti pouzdane provajdere.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Da li pružaš održavanje posle lansiranja?
+          </button>
+          <div class="faq-answer" hidden>
+            <p>Da! Nudim i pakete mesečnog održavanja – ažuriranje sadržaja, sigurnosnih ispravki i SEO optimizacije.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-    <section id="contact" class="contact">
-  <div class="container">
-    <h2>Piši mi</h2>
-    <form id="contactForm">
-      <!-- Za zaštitu od spam botova -->
-      <input type="text" name="_gotcha" style="display:none !important;" tabindex="-1" autocomplete="off">
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Piši mi</h2>
+      <form id="contactForm">
+        <!-- Za zaštitu od spam botova -->
+        <input type="text" name="_gotcha" style="display:none !important;" tabindex="-1" autocomplete="off">
 
-      <div class="form-group">
-        <input type="text" id="ime" placeholder=" " required minlength="3" />
-        <label for="ime">Tvoje ime *</label>
-      </div>
-      <div class="form-group">
-        <input type="email" id="email" placeholder=" " />
-        <label for="email">Tvoj email</label>
-      </div>
-      <div class="form-group">
-        <input type="tel" id="telefon" placeholder=" " />
-        <label for="telefon">Mobilni telefon (opciono)</label>
-      </div>
-      <div class="form-group">
-        <textarea id="poruka" placeholder=" " rows="5" required minlength="10"></textarea>
-        <label for="poruka">Poruka *</label>
-      </div>
+        <div class="form-group">
+          <input type="text" id="ime" placeholder=" " required minlength="3" />
+          <label for="ime">Tvoje ime *</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder=" " />
+          <label for="email">Tvoj email</label>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="telefon" placeholder=" " />
+          <label for="telefon">Mobilni telefon (opciono)</label>
+        </div>
+        <div class="form-group">
+          <textarea id="poruka" placeholder=" " rows="5" required minlength="10"></textarea>
+          <label for="poruka">Poruka *</label>
+        </div>
 
-      <p style="text-align: center; font-size: 0.9rem; color: var(--text-light); margin-top: -1rem; margin-bottom: 1.5rem;">
-        * Obavezna polja – morate uneti <strong>email ILI telefon</strong>.
-      </p>
+        <p
+          style="text-align: center; font-size: 0.9rem; color: var(--text-light); margin-top: -1rem; margin-bottom: 1.5rem;">
+          * Obavezna polja – morate uneti <strong>email ILI telefon</strong>.
+        </p>
 
-      <button type="submit" class="btn">Pošalji poruku</button>
-    </form>
+        <button type="submit" class="btn">Pošalji poruku</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Modal za uspešno slanje -->
+  <div id="successModal"
+    style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
+    <div class="modal-content"
+      style="background:var(--bg); color:var(--text); padding:2rem; border-radius:12px; max-width:400px; width:90%; text-align:center; border:2px solid var(--accent);">
+      <h3 style="color:var(--accent); margin:0 0 1rem;">✅ Uspešno poslato!</h3>
+      <p>Hvala na poruci! Uskoro ću ti se javiti.</p>
+      <button id="closeModal" class="btn" style="margin-top:1rem;">Zatvori</button>
+    </div>
   </div>
-</section>
-
-<!-- Modal za uspešno slanje -->
-<div id="successModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
-  <div class="modal-content" style="background:var(--bg); color:var(--text); padding:2rem; border-radius:12px; max-width:400px; width:90%; text-align:center; border:2px solid var(--accent);">
-    <h3 style="color:var(--accent); margin:0 0 1rem;">✅ Uspešno poslato!</h3>
-    <p>Hvala na poruci! Uskoro ću ti se javiti.</p>
-    <button id="closeModal" class="btn" style="margin-top:1rem;">Zatvori</button>
-  </div>
-</div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -192,6 +258,4 @@
   <script src="script.js"></script>
 </body>
 
-
 </html>
-
