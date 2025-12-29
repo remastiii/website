@@ -251,7 +251,9 @@ section {
   justify-content: center;
   align-items: center;
   padding: 0 1.5rem;
-  background: linear-gradient(135deg, #111111 0%, #0a0a0a 100%);
+  /* background: linear-gradient(135deg, #111111 0%, #0a0a0a 100%); */
+  /* background: radial-gradient(circle at 10% 20%, #4f00bc, #00cdac); */
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -654,6 +656,124 @@ section {
   background: #0a7d71; /* tamnija zelena */
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+}
+/* Container */
+.container {
+  width: min(90%, 1100px);
+  margin-inline: auto;
+}
+
+/* Proces rada */
+.workflow {
+  padding: 4rem 0;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.workflow h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: step-counter;
+}
+
+.steps li {
+  flex: 1;
+  min-width: 200px;
+  max-width: 220px;
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  position: relative;
+  text-align: center;
+}
+
+.steps li::before {
+  counter-increment: step-counter;
+  content: counter(step-counter);
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4f46e5;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.steps h3 {
+  margin: 1rem 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.steps p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* FAQ */
+.faq {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+  color: #111;
+}
+
+.faq-items {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.2rem 0;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.2s;
+}
+
+.faq-question:hover {
+  color: #4f46e5;
+}
+
+.faq-answer {
+  padding-bottom: 1.2rem;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
 }
 
 /* Footer */
