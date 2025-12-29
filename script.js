@@ -150,3 +150,23 @@ document.getElementById('closeModal').addEventListener('click', function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+// FAQ akordeon
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const answer = button.nextElementSibling;
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+    // Zatvori sve
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.setAttribute('aria-expanded', 'false');
+      btn.nextElementSibling.hidden = true;
+    });
+
+    // Otvori samo kliknuti (ako nije već otvoren)
+    if (!isExpanded) {
+      button.setAttribute('aria-expanded', 'true');
+      answer.hidden = false;
+    }
+  });
+});
+
