@@ -19,10 +19,10 @@
     <a href="#hero" class="logo">WEB STUDIO</a>
 
     <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
-      <a href="#hero">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#hero">Pocetna</a>
+      <a href="#services">Usluge</a>
+      <a href="#about">O meni</a>
+      <a href="#contact">Kontakt</a>
     </nav>
 
     <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
@@ -30,10 +30,10 @@
     </button>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="hero-content">
       <h1 class="dynamic-title">
-        <span class="static-part">Kreiramo WEB sajtove koji</span>
+        <span class="static-part">Kreiramo web sajtove koji</span>
         <span class="dynamic-part"></span>
       </h1>
       <p class="hero-p">Brzi, moderni i mobilno prilagođeni sajtovi za startupove, fitnes trenere i lokalne biznise,
@@ -42,6 +42,7 @@
       <a href="#contact" class="btn-hero">Napravi mi sajt</a>
     </div>
   </section>
+
 
   <!-- Usluge -->
   <section id="services" class="services">
@@ -169,34 +170,67 @@
   </section>
 
   <!-- FAQ -->
-  <section class="faq" id="faq">
+  <section class="faq" id="faq" itemscope itemtype="https://schema.org/FAQPage">
     <div class="container">
       <h2>Često postavljana pitanja</h2>
       <div class="faq-items">
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+        <!-- 1 -->
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-question" aria-expanded="false" itemprop="name">
             Koliko traje izrada sajta?
           </button>
-          <div class="faq-answer" hidden>
-            <p>Većina sajtova je spremna za 7–14 dana od trenutka kada se potvrdi dizajn i sadržaj.</p>
+          <div class="faq-answer">
+            <p itemprop="text">Većina sajtova je spremna za 7–14 dana od trenutka kada se potvrdi dizajn i sadržaj.</p>
           </div>
         </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+        <!-- 2 -->
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-question" aria-expanded="false" itemprop="name">
             Da li uključuješ hosting i domen?
           </button>
-          <div class="faq-answer" hidden>
-            <p>Hosting i domen nisu uključeni u osnovnu cenu, ali mogu ti pomoći da ih podesiš ako već imaš, ili
-              preporučiti pouzdane provajdere.</p>
+          <div class="faq-answer">
+            <p itemprop="text">Hosting i domen nisu uključeni u osnovnu cenu, ali mogu ti pomoći da ih podesiš ako već
+              imaš, ili preporučiti pouzdane provajdere.</p>
           </div>
         </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+        <!-- 3 -->
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-question" aria-expanded="false" itemprop="name">
             Da li pružaš održavanje posle lansiranja?
           </button>
-          <div class="faq-answer" hidden>
-            <p>Da! Nudim i pakete mesečnog održavanja – ažuriranje sadržaja, sigurnosnih ispravki i SEO optimizacije.
-            </p>
+          <div class="faq-answer">
+            <p itemprop="text">Da! Nudim i pakete mesečnog održavanja – ažuriranje sadržaja, sigurnosnih ispravki i SEO
+              optimizacije.</p>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-question" aria-expanded="false" itemprop="name">
+            Da li moj sajt radi na mobilnim uređajima?
+          </button>
+          <div class="faq-answer">
+            <p itemprop="text">Apsolutno! Svi sajtovi koje pravim su potpuno responsive i optimizovani za mobilne
+              uređaje – ključno za Google rangiranje i korisničko iskustvo.</p>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-question" aria-expanded="false" itemprop="name">
+            Da li je sajt brz i optimizovan za performanse?
+          </button>
+          <div class="faq-answer">
+            <p itemprop="text">Da. Optimizujem svaku sliku, kod i strukturu da sajt učitava za manje od 2 sekunde – što
+              je ključno za konverzije i SEO.</p>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-question" aria-expanded="false" itemprop="name">
+            Da li koristiš Bootstrap ili praviš od nule?
+          </button>
+          <div class="faq-answer">
+            <p itemprop="text">Pravim sve od nule bez Bootstrap-a – koristeći čist HTML, CSS i JavaScript. Rezultat je
+              brži, lakši i potpuno prilagođen tvojoj brend vizuelnoj identifikaciji.</p>
           </div>
         </div>
       </div>
@@ -249,14 +283,35 @@
   </div>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
+  <footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p>Marko Web — brzi, moderni i mobilno prilagođeni sajtovi za tvoj biznis.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/marko-bogdan-036506171/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:1markobogdan1@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
       <p>&copy; <span id="year"></span> Marko. All rights reserved.</p>
     </div>
-  </footer>
+  </div>
+</footer>
 
   <script src="script.js"></script>
 </body>
 
 </html>
-
