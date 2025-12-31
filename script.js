@@ -150,23 +150,28 @@ document.getElementById('closeModal').addEventListener('click', function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// FAQ akordeon
-document.querySelectorAll('.faq-question').forEach(button => {
-  button.addEventListener('click', () => {
-    const answer = button.nextElementSibling;
-    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+document.addEventListener('DOMContentLoaded', () => {
+  const questions = document.querySelectorAll('.faq-question');
 
-    // Zatvori sve
-    document.querySelectorAll('.faq-question').forEach(btn => {
-      btn.setAttribute('aria-expanded', 'false');
-      btn.nextElementSibling.hidden = true;
+  questions.forEach(button => {
+    button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+      const isCurrentlyExpanded = button.getAttribute('aria-expanded') === 'true';
+
+      // Zatvori sve odgovore
+      questions.forEach(btn => {
+        btn.setAttribute('aria-expanded', 'false');
+        btn.nextElementSibling.style.height = '0';
+        btn.nextElementSibling.style.opacity = '0';
+      });
+
+      // Otvori kliknuti (ako nije već otvoren)
+      if (!isCurrentlyExpanded) {
+        button.setAttribute('aria-expanded', 'true');
+        const targetHeight = answer.scrollHeight + 'px';
+        answer.style.height = targetHeight;
+        answer.style.opacity = '1';
+      }
     });
-
-    // Otvori samo kliknuti (ako nije već otvoren)
-    if (!isExpanded) {
-      button.setAttribute('aria-expanded', 'true');
-      answer.hidden = false;
-    }
   });
 });
-
