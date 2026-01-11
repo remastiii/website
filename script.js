@@ -175,3 +175,95 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+/*stats js */
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const statItems = document.querySelectorAll('.stat-number');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const element = entry.target;
+          const originalText = element.textContent.trim();
+
+          // Izdvoji broj i sufiks
+          const match = originalText.match(/^(\d+)(.*)$/);
+          if (!match) {
+            // Ako nema broja, preskoči animaciju
+            return;
+          }
+
+          const targetValue = parseInt(match[1], 10);
+          const suffix = match[2]; // sve posle broja: "+", "%", "k", itd.
+
+          let start = 0;
+          const duration = 2000; // 2 sekunde
+          const totalFrames = duration / 16; // ~60fps
+          const increment = targetValue / totalFrames;
+
+          const updateCount = () => {
+            start += increment;
+            if (start >= targetValue) {
+              element.textContent = targetValue + suffix;
+              return;
+            }
+            element.textContent = Math.ceil(start) + suffix;
+            requestAnimationFrame(updateCount);
+          };
+
+          updateCount();
+          observer.unobserve(element); // pokreni samo jednom
+        }
+      });
+    }, { threshold: 0.2 });
+
+    statItems.forEach(item => {
+      observer.observe(item);
+    });
+  });
+  
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.testimonial-card');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let currentIndex = 0;
+
+    function showCard(index) {
+      cards.forEach((card, i) => {
+        card.classList.toggle('active', i === index);
+      });
+    }
+
+    function updateView() {
+      if (window.innerWidth <= 768) {
+        // Mobilni: aktiviraj slider
+        showCard(currentIndex);
+        prevBtn.style.display = 'block';
+        nextBtn.style.display = 'block';
+      } else {
+        // Desktop: pokaži sve, ukloni active klasu
+        cards.forEach(card => card.classList.remove('active'));
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+      }
+    }
+
+    updateView();
+    window.addEventListener('resize', updateView);
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % cards.length;
+      showCard(currentIndex);
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      showCard(currentIndex);
+    });
+  });
+
+
+
+
