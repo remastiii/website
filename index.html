@@ -16,12 +16,13 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <a href="#hero" class="logo">WEB STUDIO</a>
+    <a href="#hero" class="logo">Marko Web</a>
 
     <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
       <a href="#hero">Pocetna</a>
       <a href="#services">Usluge</a>
       <a href="#about">O meni</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Kontakt</a>
     </nav>
 
@@ -33,7 +34,7 @@
   <section class="hero" id="hero">
     <div class="hero-content">
       <h1 class="dynamic-title">
-        <span class="static-part">Kreiramo web sajtove koji</span>
+        <span class="static-part">Kreiram web sajtove koji</span>
         <span class="dynamic-part"></span>
       </h1>
       <p class="hero-p">Brzi, moderni i mobilno prilagođeni sajtovi za startupove, fitnes trenere i lokalne biznise,
@@ -42,6 +43,30 @@
       <a href="#contact" class="btn-hero">Napravi mi sajt</a>
     </div>
   </section>
+  <section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">zadovoljnih klijenata</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">45+</div>
+        <div class="stat-label">razrađenih biznisa</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">45+</div>
+        <div class="stat-label">sajtova pokrenuto</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">mobilno prilagođeno</div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  
 
 
   <!-- Usluge -->
@@ -103,6 +128,29 @@
       </div>
     </div>
   </section>
+  <section class="devices-section">
+  <div class="container">
+    <div class="devices-grid">
+      <!-- Desktop -->
+      <div class="device-column">
+        <div class="device-image">
+          <img src="/images/laptop.png" alt="Web sajt na desktopu" loading="lazy">
+        </div>
+        <h3>Desktop</h3>
+        <p>Sajtovi koji izgledaju profesionalno na računarima. Širok layout, jasna navigacija i brzo učitavanje — savršeno za klijente koji traže ozbiljan online izgled.</p>
+      </div>
+
+      <!-- Mobile/Tablet -->
+      <div class="device-column">
+        <div class="device-image">
+          <img src="/images/mobile.png" alt="Web sajt na mobilnom telefonu i tabletu" loading="lazy">
+        </div>
+        <h3>Mobile & Tablet</h3>
+        <p>Potpuno prilagođeno mobilnim uređajima. Bez zumiranja, bez horizontalnog skrolovanja — vaši posetioci će ostati jer im je sve na dohvat ruke.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- About -->
   <section id="about" class="about">
@@ -143,7 +191,7 @@
   <!-- Proces rada -->
   <section class="workflow" id="workflow">
     <div class="container">
-      <h2>Naš proces rada</h2>
+      <h2>Proces rada</h2>
       <ol class="steps">
         <li>
           <h3>Konsultacija</h3>
@@ -155,7 +203,7 @@
         </li>
         <li>
           <h3>Razvoj</h3>
-          <p>Prevodim dizajn u brz, pristupačan i SEO-prijateljski sajt bez Bootstrapa.</p>
+          <p>Prevodim dizajn u brz, pristupačan i SEO-optimizovan sajt.</p>
         </li>
         <li>
           <h3>Testiranje</h3>
@@ -224,18 +272,131 @@
           </div>
         </div>
         <!-- 6 -->
-        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <button class="faq-question" aria-expanded="false" itemprop="name">
-            Da li koristiš Bootstrap ili praviš od nule?
-          </button>
-          <div class="faq-answer">
-            <p itemprop="text">Pravim sve od nule bez Bootstrap-a – koristeći čist HTML, CSS i JavaScript. Rezultat je
-              brži, lakši i potpuno prilagođen tvojoj brend vizuelnoj identifikaciji.</p>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="testimonials-section">
+  <div class="container">
+    <div class="testimonials-header">
+      <h2>Reci naših klijenata</h2>
+      <h3>Šta kažu nakon što im napravimo sajt</h3>
+      <p>Više od 30 preduzeća je počelo svoju digitalnu priču uz nas</p>
+      <div class="nav-buttons">
+        <button class="nav-btn prev" aria-label="Prethodni testimonijal">←</button>
+        <button class="nav-btn next" aria-label="Sledeći testimonijal">→</button>
+      </div>
+    </div>
+
+    <div class="testimonials-slider">
+      <!-- 1. Fitnes trener -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Sajt mi je potpuno promenio igru! Sada klijenti mogu da vide moje programe, cene i da se odmah prijave. Već sam popunio dva nova termina samo iz sajta.</p>
+        <div class="client-info">
+          <img src="/images/luka.png" alt="Luka Đorđević" class="avatar">
+          <div>
+            <div class="client-name">Luka Đorđević</div>
+            <div class="client-role">Personalni trener</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Vlasnik restorana -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Konačno imam sajt koji prikazuje jelovnik, radno vreme i omogućava rezervacije. Gosti kažu da im je lako da pronađu sve informacije — čak i na telefonu!</p>
+        <div class="client-info">
+          <img src="images/restoran.png" alt="Marko Stanković" class="avatar">
+          <div>
+            <div class="client-name">Marko Stanković</div>
+            <div class="client-role">Vlasnik restorana „Balkan Bistro“</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Online coach -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Kao online coach, bio mi je hitno potreban profesionalan izgled. Sada imam landing stranicu koja jasno objašnjava moje usluge i privlači prave ljude. Hvala ti, Marko!</p>
+        <div class="client-info">
+          <img src="/images/coach.png" alt="Jelena Milić" class="avatar">
+          <div>
+            <div class="client-name">Jelena Milić</div>
+            <div class="client-role">Life & Career Coach</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Psihoterapeut -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Potrebna mi je bila diskretna, ali jasna prezentacija usluga. Sajt je savršeno urađen — profesionalan, miran i lako navigabilan. Klijenti često kažu da su se osećali sigurno već na prvi pogled.</p>
+        <div class="client-info">
+          <img src="images/dragana-psihoterapeut.jpg" alt="Dragana Kovačević" class="avatar">
+          <div>
+            <div class="client-name">Dragana Kovačević</div>
+            <div class="client-role">Psihoterapeut</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Preduzetnik (digitalne usluge) -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Kao preduzetnik u IT sektoru, znao sam koliko je važan prvi utisak. Moja nova stranica izgleda moderno, brzo se učitava i odlično funkcioniše na svim uređajima. Preporučujem svima!</p>
+        <div class="client-info">
+          <img src="images/nikola-it.jpg" alt="Nikola Petrović" class="avatar">
+          <div>
+            <div class="client-name">Nikola Petrović</div>
+            <div class="client-role">Osnivač digitalne agencije</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Vlasnica kozmetičkog salona -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Moje klijentkinje stalno su me pitali za sajt gde mogu da vide usluge i cene. Sad imaju sve na jednom mestu — čak i mogućnost da zakazuju termin direktno. Neverovatno olakšanje!</p>
+        <div class="client-info">
+          <img src="images/ivana-salon.jpg" alt="Ivana Jovanović" class="avatar">
+          <div>
+            <div class="client-name">Ivana Jovanović</div>
+            <div class="client-role">Vlasnica kozmetičkog salona</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Online edukator -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Pravim online kurseve za roditelje, a sajt mi je pomogao da dostignem mnogo širu publiku. Ljudi lako pronalaze moje sadržaje i kontaktiraju me za saradnju. Vredelo je svaki dinar!</p>
+        <div class="client-info">
+          <img src="images/marija-edu.jpg" alt="Marija Simić" class="avatar">
+          <div>
+            <div class="client-name">Marija Simić</div>
+            <div class="client-role">Edukator za roditeljske veštine</div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section id="contact" class="contact">
     <div class="container">
@@ -303,10 +464,15 @@
             <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
         </a>
+        <a href="tel:+381603702326" aria-label="Pozovi me">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span id="year"></span> Marko. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> MarkoWeb +381603702326 <br>All rights reserved.</p>
     </div>
   </div>
 </footer>
