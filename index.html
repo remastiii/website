@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Professional web developer offering modern, responsive websites with clean code and stunning design." />
+  <title>Marko | Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="#hero" class="logo">Marko Web</a>
+
+    <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+      <a href="#hero">Pocetna</a>
+      <a href="#services">Usluge</a>
+      <a href="#projects">Radovi</a>
+      <a href="#about">O meni</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+
+    <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger-icon"></span>
+    </button>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="dynamic-title">
+        <span class="static-part">Kreiram web sajtove koji</span>
+        <span class="dynamic-part"></span>
+      </h1>
+      <p class="hero-p">Brzi, moderni i mobilno prilagođeni sajtovi za startupove, fitnes trenere i lokalne biznise,
+        napravljeni da
+        privuku klijente i povećaju prodaju.</p>
+      <a href="#contact" class="btn-hero">Napravi mi sajt</a>
+    </div>
+  </section>
+  <section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">zadovoljnih klijenata</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">45+</div>
+        <div class="stat-label">razrađenih biznisa</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">45+</div>
+        <div class="stat-label">sajtova pokrenuto</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">mobilno prilagođeno</div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  
+
+
+  <!-- Usluge -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Moje usluge</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Web dizajn</h3>
+              <p>Moderni i intuitivni izgled sajta.</p>
+            </div>
+            <div class="card-back">
+              <p>Pravim čiste, atraktivne i mobilno prilagođene dizajne koji korisnicima omogućavaju da lako pronađu ono
+                što im treba — bez zbrke i preteranosti.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Web development</h3>
+              <p>Brzi, pristupačni i stabilni sajtovi.</p>
+            </div>
+            <div class="card-back">
+              <p>Kodiram ručno u HTML, CSS i JavaScript — bez nepotrebnih alata. Rezultat? Sajt koji se brzo učitava,
+                radi svuda i lako se održava.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Landing stranice</h3>
+              <p>Sajtovi koji pretvaraju posetioce u klijente.</p>
+            </div>
+            <div class="card-back">
+              <p>Jednostranični sajtovi napravljeni da prodaju: jasan poziv na akciju, optimizovan za mobilne uređaje i
+                brzo učitavanje — da ne izgubiš klijenta.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>SEO optimizacija</h3>
+              <p>Bolja vidljivost na Google pretrazi.</p>
+            </div>
+            <div class="card-back">
+              <p>Podešavam naslove, opise, slike i strukturu sajta tako da Google bolje razume tvoju uslugu — posebno za
+                lokalne pretrage u tvojoj okolini.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="devices-section">
+  <div class="container">
+    <div class="devices-grid">
+      <!-- Desktop -->
+      <div class="device-column">
+        <div class="device-image">
+          <img src="/images/laptop.png" alt="Web sajt na desktopu" loading="lazy">
+        </div>
+        <h3>Desktop</h3>
+        <p>Sajtovi koji izgledaju profesionalno na računarima. Širok layout, jasna navigacija i brzo učitavanje — savršeno za klijente koji traže ozbiljan online izgled.</p>
+      </div>
+
+      <!-- Mobile/Tablet -->
+      <div class="device-column">
+        <div class="device-image">
+          <img src="/images/mobile.png" alt="Web sajt na mobilnom telefonu i tabletu" loading="lazy">
+        </div>
+        <h3>Mobile & Tablet</h3>
+        <p>Potpuno prilagođeno mobilnim uređajima. Bez zumiranja, bez horizontalnog skrolovanja — vaši posetioci će ostati jer im je sve na dohvat ruke.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Projekti -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Skoro odradjeni projekti</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/images/babyguard-preview.webp" alt="BabyGuard sajt preview" loading="lazy">
+          </div>
+          <div class="project-content">
+            <h3>BabyGuard.rs</h3>
+            <p>Moderni sajt za prodaju bezbednosnih proizvoda za decu. Brzo ucitavanje, mobilno prilagojen i SEO optimizovan za bolje rangiranje.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>SEO</span>
+            </div>
+            <div class="project-links">
+              <a href="https://babyguard.rs" target="_blank" rel="noopener" class="btn-project">Poseti sajt</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/images/dekoracije-preview.webp" alt="Dekoracije Djordjevic sajt preview" loading="lazy">
+          </div>
+          <div class="project-content">
+            <h3>Dekoracije Djordjevic</h3>
+            <p>Elegantni sajt za usluge enterijera i dekoracije. Fokus na vizuelnu prezentaciju radova i lako kontaktiranje klijenata.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="https://dekoracije-djordjevic.rs" target="_blank" rel="noopener" class="btn-project">Poseti sajt</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/images/west-ordinacija-preview.webp" alt="WEST Ordinacija sajt preview" loading="lazy">
+          </div>
+          <div class="project-content">
+            <h3>Stomatološka ordinacija WEST</h3>
+            <p>Moderni sajt za stomatološku i estetsku ordinaciju. Profesionalan dizajn prilagođen potrebama medicinskih praksi.</p>
+            <div class="project-status">
+              <span class="status-badge">Trenutno u izradi</span>
+            </div>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Medical Design</span>
+            </div>
+            <div class="project-links">
+              <a href="https://remastiii.github.io/ordinacija-west/" target="_blank" rel="noopener" class="btn-project">Poseti sajt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>O meni</h2>
+          <p>
+            Zovem se Marko i pravim <strong>brze, moderne i mobilno prilagođene sajtove</strong> za lokalne biznise,
+            fitnes trenera i startups.
+            Moja misija je jednostavna: <strong>pomoći vlasnicima biznisa koji još nisu na internetu da dobiju prvi,
+              efikasan sajt — bez tehničkog žargona, bez nepotrebnih troškova i bez gubljenja vremena.</strong>
+          </p>
+          <p>
+            Ako još uvek nemaš sajt, verovatno gubiš klijente svakog dana. Ljudi danas prvo traže usluge na Googleu ili
+            Instagramu —
+            a ako te nema, biraju nekog drugog. Ja ti pravim <strong>sajt koji radi za tebe</strong>: privlači klijente,
+            objašnjava tvoju uslugu i povećava prodaju —
+            čak i dok spavaš.
+          </p>
+          <p>
+            Bez sajta, veliki deo tvoje vrednosti ostaje nevidljiv.
+            Sajt koji jasno prikazuje tvoj pristup, usluge i način rada ne samo da privlači prave klijente – već i štedi
+            tvoje vreme,
+            jer ljudi dolaze već upoznati s onim što nudiš.
+            To znači manje objašnjavanja, više smislenih razgovora – i više prostora za ono što stvarno voliš da radiš.
+          </p>
+          <p>
+            Ne prodajem "dizajn". Prodajem <strong>rezultate</strong>.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="CV.webp" alt="Marko - Web Developer" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Proces rada -->
+  <section class="workflow" id="workflow">
+    <div class="container">
+      <h2>Proces rada</h2>
+      <ol class="steps">
+        <li>
+          <h3>Konsultacija</h3>
+          <p>Razgovaramo o tvojim ciljevima, ciljnoj publici i funkcionalnostima koje su ti potrebne.</p>
+        </li>
+        <li>
+          <h3>Dizajn</h3>
+          <p>Kreiram moderan, mobilno-prilagođen mockup koji odražava tvoj brend.</p>
+        </li>
+        <li>
+          <h3>Razvoj</h3>
+          <p>Prevodim dizajn u brz, pristupačan i SEO-optimizovan sajt.</p>
+        </li>
+        <li>
+          <h3>Testiranje</h3>
+          <p>Proveravam performanse, kompatibilnost i ispravnost na svim uređajima.</p>
+        </li>
+        <li>
+          <h3>Lansiranje</h3>
+          <p>Pokrećem sajt i obezbeđujem osnovnu SEO optimizaciju i Google integracije.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" itemscope itemtype="https://schema.org/FAQPage">
+    <div class="container">
+      <h2>Često postavljana pitanja</h2>
+      <div class="faq-items">
+        <!-- 1 -->
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-question" aria-expanded="false" itemprop="name">
+            Koliko traje izrada sajta?
+          </button>
+          <div class="faq-answer">
+            <p itemprop="text">Većina sajtova je spremna za 7–14 dana od trenutka kada se potvrdi dizajn i sadržaj.</p>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-question" aria-expanded="false" itemprop="name">
+            Da li uključuješ hosting i domen?
+          </button>
+          <div class="faq-answer">
+            <p itemprop="text">Hosting i domen nisu uključeni u osnovnu cenu, ali mogu ti pomoći da ih podesiš ako već
+              imaš, ili preporučiti pouzdane provajdere.</p>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-question" aria-expanded="false" itemprop="name">
+            Da li pružaš održavanje posle lansiranja?
+          </button>
+          <div class="faq-answer">
+            <p itemprop="text">Da! Nudim i pakete mesečnog održavanja – ažuriranje sadržaja, sigurnosnih ispravki i SEO
+              optimizacije.</p>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-question" aria-expanded="false" itemprop="name">
+            Da li moj sajt radi na mobilnim uređajima?
+          </button>
+          <div class="faq-answer">
+            <p itemprop="text">Apsolutno! Svi sajtovi koje pravim su potpuno responsive i optimizovani za mobilne
+              uređaje – ključno za Google rangiranje i korisničko iskustvo.</p>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-question" aria-expanded="false" itemprop="name">
+            Da li je sajt brz i optimizovan za performanse?
+          </button>
+          <div class="faq-answer">
+            <p itemprop="text">Da. Optimizujem svaku sliku, kod i strukturu da sajt učitava za manje od 2 sekunde – što
+              je ključno za konverzije i SEO.</p>
+          </div>
+        </div>
+        <!-- 6 -->
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="testimonials-section">
+  <div class="container">
+    <div class="testimonials-header">
+      <h2>Reci naših klijenata</h2>
+      <h3>Šta kažu nakon što im napravimo sajt</h3>
+      <p>Više od 30 preduzeća je počelo svoju digitalnu priču uz nas</p>
+      <div class="nav-buttons">
+        <button class="nav-btn prev" aria-label="Prethodni testimonijal">←</button>
+        <button class="nav-btn next" aria-label="Sledeći testimonijal">→</button>
+      </div>
+    </div>
+
+    <div class="testimonials-slider">
+      <!-- 1. Fitnes trener -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Sajt mi je potpuno promenio igru! Sada klijenti mogu da vide moje programe, cene i da se odmah prijave. Već sam popunio dva nova termina samo iz sajta.</p>
+        <div class="client-info">
+          <img src="/images/luka.png" alt="Luka Đorđević" class="avatar">
+          <div>
+            <div class="client-name">Luka Đorđević</div>
+            <div class="client-role">Personalni trener</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Vlasnik restorana -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Konačno imam sajt koji prikazuje jelovnik, radno vreme i omogućava rezervacije. Gosti kažu da im je lako da pronađu sve informacije — čak i na telefonu!</p>
+        <div class="client-info">
+          <img src="images/restoran.png" alt="Marko Stanković" class="avatar">
+          <div>
+            <div class="client-name">Marko Stanković</div>
+            <div class="client-role">Vlasnik restorana „Balkan Bistro“</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Online coach -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Kao online coach, bio mi je hitno potreban profesionalan izgled. Sada imam landing stranicu koja jasno objašnjava moje usluge i privlači prave ljude. Hvala ti, Marko!</p>
+        <div class="client-info">
+          <img src="/images/coach.png" alt="Jelena Milić" class="avatar">
+          <div>
+            <div class="client-name">Jelena Milić</div>
+            <div class="client-role">Life & Career Coach</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Psihoterapeut -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Potrebna mi je bila diskretna, ali jasna prezentacija usluga. Sajt je savršeno urađen — profesionalan, miran i lako navigabilan. Klijenti često kažu da su se osećali sigurno već na prvi pogled.</p>
+        <div class="client-info">
+          <img src="images/dragana-psihoterapeut.jpg" alt="Dragana Kovačević" class="avatar">
+          <div>
+            <div class="client-name">Dragana Kovačević</div>
+            <div class="client-role">Psihoterapeut</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Preduzetnik (digitalne usluge) -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Kao preduzetnik u IT sektoru, znao sam koliko je važan prvi utisak. Moja nova stranica izgleda moderno, brzo se učitava i odlično funkcioniše na svim uređajima. Preporučujem svima!</p>
+        <div class="client-info">
+          <img src="images/nikola-it.jpg" alt="Nikola Petrović" class="avatar">
+          <div>
+            <div class="client-name">Nikola Petrović</div>
+            <div class="client-role">Osnivač digitalne agencije</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Vlasnica kozmetičkog salona -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Moje klijentkinje stalno su me pitali za sajt gde mogu da vide usluge i cene. Sad imaju sve na jednom mestu — čak i mogućnost da zakazuju termin direktno. Neverovatno olakšanje!</p>
+        <div class="client-info">
+          <img src="images/ivana-salon.jpg" alt="Ivana Jovanović" class="avatar">
+          <div>
+            <div class="client-name">Ivana Jovanović</div>
+            <div class="client-role">Vlasnica kozmetičkog salona</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Online edukator -->
+      <div class="testimonial-card">
+        <div class="stars">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <p>Pravim online kurseve za roditelje, a sajt mi je pomogao da dostignem mnogo širu publiku. Ljudi lako pronalaze moje sadržaje i kontaktiraju me za saradnju. Vredelo je svaki dinar!</p>
+        <div class="client-info">
+          <img src="images/marija-edu.jpg" alt="Marija Simić" class="avatar">
+          <div>
+            <div class="client-name">Marija Simić</div>
+            <div class="client-role">Edukator za roditeljske veštine</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Piši mi</h2>
+      <form id="contactForm">
+        <!-- Za zaštitu od spam botova -->
+        <input type="text" name="_gotcha" style="display:none !important;" tabindex="-1" autocomplete="off">
+
+        <div class="form-group">
+          <input type="text" id="ime" placeholder=" " required minlength="3" />
+          <label for="ime">Tvoje ime *</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder=" " />
+          <label for="email">Tvoj email</label>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="telefon" placeholder=" " />
+          <label for="telefon">Mobilni telefon (opciono)</label>
+        </div>
+        <div class="form-group">
+          <textarea id="poruka" placeholder=" " rows="5" required minlength="10"></textarea>
+          <label for="poruka">Poruka *</label>
+        </div>
+
+        <p
+          style="text-align: center; font-size: 0.9rem; color: var(--text-light); margin-top: -1rem; margin-bottom: 1.5rem;">
+          * Obavezna polja – morate uneti <strong>email ILI telefon</strong>.
+        </p>
+
+        <button type="submit" class="btn">Pošalji poruku</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Modal za uspešno slanje -->
+  <div id="successModal"
+    style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
+    <div class="modal-content"
+      style="background:var(--bg); color:var(--text); padding:2rem; border-radius:12px; max-width:400px; width:90%; text-align:center; border:2px solid var(--accent);">
+      <h3 style="color:var(--accent); margin:0 0 1rem;">✅ Uspešno poslato!</h3>
+      <p>Hvala na poruci! Uskoro ću ti se javiti.</p>
+      <button id="closeModal" class="btn" style="margin-top:1rem;">Zatvori</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-info">
+        <p>Marko Web — brzi, moderni i mobilno prilagođeni sajtovi za tvoj biznis.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/marko-bogdan-036506171/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:1markobogdan1@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <a href="tel:+381603702326" aria-label="Pozovi me">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> MarkoWeb +381603702326 <br>All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
